@@ -17,12 +17,12 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Кнопка для выбора файла -->
+   
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Click="ChooseFile_Click" Background="LightGray" Padding="10,5" Width="120" Content="Выбрать файл"/>
         </StackPanel>
 
-        <!-- Текстовое поле для отображения пути к файлу -->
+
         <TextBox Grid.Row="1" Name="filePathTextBox" IsReadOnly="True" Margin="0,10" Background="#F0F0F0" Height="30"/>
 
         <!-- Панель с полем для пароля и вариантами шифрования/расшифровки -->
@@ -35,10 +35,9 @@
             </StackPanel>
         </StackPanel>
 
-        <!-- Индикатор выполнения -->
+     
         <ProgressBar Grid.Row="3" Name="progressIndicator" Height="20" Margin="0,15" Foreground="Green" IsIndeterminate="False"/>
 
-        <!-- Кнопки для запуска и отмены операции -->
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,5">
             <Button Name="executeButton" Click="Execute_Click" Padding="10,5" Margin="10" Width="120" Content="Начать"/>
             <Button Name="cancelButton" Click="CancelOperation_Click" Background="Salmon" Padding="10,5" Margin="10" Width="120" Content="Отмена" IsEnabled="False"/>
